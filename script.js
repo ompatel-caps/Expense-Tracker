@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('userIcon', icon);
 
       window.location.href = 'Dashboard.html';
-    });
+    }); 
   });
 
   const userName = localStorage.getItem('userName');
