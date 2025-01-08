@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('userName', name);
       localStorage.setItem('userIcon', icon);
 
-      window.location.href = 'dashboard.html';
+      window.location.href = 'Dashboard.html';
     });
   });
 
