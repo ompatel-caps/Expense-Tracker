@@ -1,0 +1,179 @@
+body {
+    background-color: #1E1E1E;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    /* Reduced font size */
+  }
+
+  .sidebar {
+    background-color: #2A3D57;
+    color: #FFFFFF;
+    height: 100vh;
+    padding: 10px;
+    /* Reduced padding */
+  }
+
+  .sidebar .nav-link {
+    color: #A8A8A8;
+    margin: 5px 0;
+    /* Reduced margin */
+    font-size: 12px;
+  }
+
+  .sidebar .nav-link:hover {
+    background-color: #5B6D72; /* Pastel Blue on hover */
+
+}
+  .card-display,
+  .chart-container,
+  .pie-chart-container,
+  .transaction-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    /* Reduced padding */
+  }
+
+
+
+  header {
+    font-size: 14px;
+    background-color: #212529;
+    color: #FFFFFF;
+    /* Slightly reduced font size for header */
+  }
+
+  canvas {
+    height: 200px !important;
+    /* Reduced canvas height */
+  }
+  .separator {
+border: 5px;
+height: 1px;
+background-color: #A3C8FF;
+margin: 0px 0; /* Add space above and below the line */
+
+}
+
+.separator2 {
+    border: 5px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 0px 0; /* Add space above and below the line */
+    }
+
+
+    .Wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .Base {
+      background: #ccc;
+      height: 250px; /* Reduced height */
+      width: 400px;  /* Reduced width */
+      border-radius: 15px;
+    }
+    
+    .Inner-wrap {
+      background-color: #0c0014;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg%3E%3Cpolygon fill='%230d1838' points='1600%2C160 0%2C460 0%2C350 1600%2C50'/%3E%3Cpolygon fill='%230e315d' points='1600%2C260 0%2C560 0%2C450 1600%2C150'/%3E%3Cpolygon fill='%230f4981' points='1600%2C360 0%2C660 0%2C550 1600%2C250'/%3E%3Cpolygon fill='%231062a6' points='1600%2C460 0%2C760 0%2C650 1600%2C350'/%3E%3Cpolygon fill='%23117aca' points='1600%2C800 0%2C800 0%2C750 1600%2C450'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: auto 147%;
+      background-position: center;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      border-radius: 13px;
+      padding: 15px 30px; /* Reduced padding */
+      box-sizing: border-box;
+      color: #fff;
+    }
+    
+    p {
+      margin: 0;
+      font-size: 1.5em; /* Smaller font size */
+    }
+    
+    /* Controls top right logo */
+    .Logo {
+      position: absolute;
+      height: 60px;  /* Reduced logo size */
+      width: 60px;   /* Reduced logo size */
+      right: 0;
+      top: 0;
+      padding: inherit;
+      fill: #117aca;
+    }
+    
+    /* Controls chip icon */
+    .Chip {
+      height: 60px; /* Reduced chip size */
+      margin: 30px 0 20px 0; /* Reduced margins */
+    }
+    
+    svg {
+      display: block;
+    }
+    
+    /* Controls name size */
+    .Logo-name {
+      transform: scale(0.4); /* Adjusted for smaller logo name */
+      margin-left: -60px;
+    }
+    
+    .Card-number p {
+      text-align: center;
+    }
+    
+    .Card-number {
+      margin-top: -20px;
+      display: flex;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    ul {
+      padding: 0;
+    }
+    
+    ul li {
+      list-style: none;
+      float: left;
+      margin: 0px 8px; /* Reduced space between list items */
+      font-size: 1.8em; /* Smaller font size */
+    }
+    
+    #first-li {
+      margin-left: 0;
+    }
+    
+    #last-li {
+      margin-right: 0;
+    }
+    
+    .Expire {
+      font-size: .65em; /* Smaller font size */
+      text-align: center;
+    }
+    
+    .Expire h4 {
+      font-weight: 400;
+      color: #aaa;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    
+    .Expire p {
+      font-size: 1.35em; /* Reduced font size */
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .Visa {
+      width: 100px; /* Reduced Visa logo size */
+      position: absolute;
+      bottom: -120px;
+      right: 0;
+      padding: inherit;
+    }
+    

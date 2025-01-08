@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pie Chart from LocalStorage</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+/* Container for charts */
+.chart-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+  gap: 30px;
+  padding: 20px;
+  /* background-color: #2A3D57; Deep Slate Blue for background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow to create depth */
+}
+
+/* Style for each chart canvas */
+canvas {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #1E1E1E; /* Dark border around the charts */
+  background-color: #f9f9f9; /* Subtle background for the charts */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+/* Title for the page */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #EAEAEA; /* Off-White text color for the title */
+}
+
+/* Adding subtle animation to chart container */
+.chart-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation for chart container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Adding a subtle background color and border for better contrast */
+body {
+  background-color: #1E1E1E; /* Dark background for body */
+  font-family: Arial, sans-serif;
+  color: #EAEAEA; /* Light text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Transaction Report</h1>
+
+  <!-- Container to hold both charts -->
+  <div class="chart-container">
+    <canvas id="myPieChart" width="250" height="250"></canvas>
+    <canvas id="myBarChart" width="250" height="250"></canvas>
+  </div>
+
+
+
+  <!-- External JS file for handling report logic (chart data, etc.) -->
+  <script src="report.js"></script>
+  <!-- <script src="script.js"></script> -->
+  
+</body>
+</html>
